@@ -17,5 +17,6 @@ mongoose.connect(process.env.MONGO_CONNECTION_STRING).then(() => console.log("Mo
 const wr = require("./weather");
 app.use('/', wr);
 
-const port = 3000
+const port = 7003
+
 app.listen(port, () => console.log(`Server running on port ${port}`))
